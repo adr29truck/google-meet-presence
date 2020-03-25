@@ -1,0 +1,24 @@
+html {
+  min-width: 8em;
+}
+body {
+  margin: 0;
+  padding: 6px;
+  width: calc(100% - 12px);
+  display: flex;
+  justify-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  width: 100%;
+}
+
+#checkPage {
+  min-width: 80%;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+#checkPage:hover {
+  background: rgba(8, 139, 26, 0.623)
+}
