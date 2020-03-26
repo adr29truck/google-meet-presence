@@ -5,15 +5,17 @@ chrome.runtime.onMessage.addListener(
       users = JSON.parse(request.data)
       console.log(users);
 
-
-      for (let element in elements) {
-        // TODO: Select element path FIXME:
-        if (users.includes(element .innerHTML)) {
-          // The user is present do nothing
-        } else {
-          // The user was not present
-          element.style.background = "lightcoral";
-        }
+      if (users != []) {
+        // elements = document.querySelectorAll()
+        // for (let element in elements) {
+        //   // TODO: Select element path FIXME:
+        //   if (users.includes(element.innerHTML)) {
+        //     // The user is present do nothing
+        //   } else {
+        //     // The user was not present
+        //     element.style.background = "lightcoral";
+        //   }
+        // }
       }
     }
     sendResponse({});

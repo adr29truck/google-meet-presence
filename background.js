@@ -6,6 +6,10 @@ chrome.runtime.onMessage.addListener(
       sendUsers(function (data) {
         chrome.tabs.sendMessage(sender.tab.id, JSON.parse(data))
       })
+    } else if (request.action == 'reset') {
+      chrome.storage.local.set({
+        'users': []
+      })
     }
     sendResponse({});
     return true;

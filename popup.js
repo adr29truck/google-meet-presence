@@ -13,6 +13,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
   });
+  var resetButton = document.getElementById('reset');
+  resetButton.addEventListener('click', function () {
+    chrome.runtime.sendMessage({
+      action: 'reset'
+    }, function (response) {
+      console.log(response);
+    })
+  })
 }, false);
 
 
@@ -27,15 +35,15 @@ chrome.runtime.onMessage.addListener(
     return true;
   })
 
-  
-  function taking() {
-    temp = document.getElementById('checkPage')
-    console.log(temp)
-    if (temp.innerHTML != 'Complete') {
-      temp.innerHTML = 'Hold tight..'
-    }
+
+function taking() {
+  temp = document.getElementById('checkPage')
+  console.log(temp)
+  if (temp.innerHTML != 'Complete') {
+    temp.innerHTML = 'Hold tight..'
   }
-  
+}
+
 function complete() {
   temp = document.getElementById('checkPage')
   console.log(temp)
