@@ -1,0 +1,12 @@
+{
+  "name": "deploy",
+  "version": "0.0.1",
+  "scripts": {
+    "deploy": "node deploy.js"
+  },
+  "dependencies": {
+    "chrome-webstore-upload": "^0.2.2",
+    "fs": "0.0.1-security",
+    "zip-folder": "^1.0.0"
+  }
+}
