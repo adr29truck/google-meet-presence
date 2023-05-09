@@ -5,7 +5,7 @@
     "deploy": "node deploy.js"
   },
   "dependencies": {
-    "chrome-webstore-upload": "^0.2.2",
+    "chrome-webstore-upload": "^1.0.0",
     "fs": "0.0.1-security",
     "zip-folder": "^1.0.0"
   }
